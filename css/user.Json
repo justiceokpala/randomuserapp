@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Ms",
+                "first": "Ayla",
+                "last": "Jackson"
+            },
+            "location": {
+                "street": {
+                    "number": 1338,
+                    "name": "Hillsborough Road"
+                },
+                "city": "Dunedin",
+                "state": "Auckland",
+                "country": "New Zealand",
+                "postcode": 46130,
+                "coordinates": {
+                    "latitude": "65.0930",
+                    "longitude": "61.2280"
+                },
+                "timezone": {
+                    "offset": "+4:00",
+                    "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+                }
+            },
+            "email": "ayla.jackson@example.com",
+            "login": {
+                "uuid": "25da2620-652a-42f1-a730-0f5c7106d4d4",
+                "username": "angrybear960",
+                "password": "celica",
+                "salt": "tkQj0gNC",
+                "md5": "36c5faf21ab5d0d301ead7698214bbd0",
+                "sha1": "c3ebb216ce7d8904c7a37f75f2f30190d1a52918",
+                "sha256": "ab563cfb3d39c825ec88ae44bcbe2b79f29dc9bb266b4dc45ad2f54df6054be1"
+            },
+            "dob": {
+                "date": "1964-09-16T23:29:08.977Z",
+                "age": 56
+            },
+            "registered": {
+                "date": "2016-02-04T17:55:10.632Z",
+                "age": 4
+            },
+            "phone": "(004)-828-3871",
+            "cell": "(955)-015-9517",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/44.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/44.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/44.jpg"
+            },
+            "nat": "NZ"
+        }
+    ],
+    "info": {
+        "seed": "a46bd591e7bf0d74",
+        "results": 1,
+        "page": 1,
+        "version": "1.3"
+    }
+}

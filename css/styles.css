@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap");
+.black{
+    background-color: rgb(40, 40, 56);
+}
+
+.white{
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    padding: 10px;
+}
+
+.face{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    
+}
+img{
+    width:40%;
+    border-radius: 80%;
+}
+
+#btn{
+    display: none;
+    margin-left: 46%;
+}
+
+
+
+
+
+
+
+
+

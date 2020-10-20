@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="container-fluid black">
+        <div class="row ">
+            <div class="col-md-12 text-center mt-4">
+                <h1 class="white">RANDOM USER GENERATOR</h1>
+                <p class="white">A free, <a href="" > open source</a> API for generating random user data. Like Lorem Ipsum, but for people.</p>
+                <h6 class="white mt-4 mb-4">Follow us @randomapi</h6>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 face mt-4">
+                            <img src="" class="mt-4"  id="img">
+                            <div class="mt-4">
+                                <button type="submit" id="btn" class="btn-danger">NEW</button>
+                            <h6 id="hi">Hi, my name is</h6>
+                            <h3 id="Elsie">Elsie Thomas</h3>
+                            </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script>
+        let hi = document.getElementById('hi')
+        let Elsie = document.getElementById("Elsie");
+        let img = document.getElementById("img");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', getJason);
+        hi.addEventListener('mouseover', displayButton );
+        document.addEventListener('DOMContentLoaded',getJason );
+    
+        const URL = 'https://randomuser.me/api/'
+
+        function getJason()
+         { 
+        fetch(URL)
+        .then(function(response){
+            if(!response.ok){
+                throw Error(response.statusText);
+            }
+            return response.json();
+        })
+        .then(function(responseAsJson){
+            Elsie.innerHTML = responseAsJson.results[0].name.title ;
+            Elsie.innerHTML = responseAsJson.results[0].name.first ;
+            Elsie.innerHTML = responseAsJson.results[0].name.last ;
+            img.src = responseAsJson.results[0].picture.large;
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+     }
+
+       function displayButton(){
+          btn.style.display= "block";
+       }     
+    </script>
+</body>
+</html>
